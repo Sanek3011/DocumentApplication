@@ -38,8 +38,13 @@ public class DocumentService {
                 .author(documentDto.getAuthor())
                 .title(documentDto.getTitle())
                 .status(DocumentStatus.DRAFT).build();
-        Document save = documentsRepository.save(document);
-        return save.getUuid().toString();
+        try {
+            Document save = documentsRepository.save(document);
+            log.info("Успешно сохранен документ {}",save.getUuid());
+            return save.getUuid().toString();
+        }catch (Exception ex) {
+            log.error("Документ {} не сохранен по причине {}", document.getTitle(), ex.getMessage() );
+        }
     }
 
     /**
