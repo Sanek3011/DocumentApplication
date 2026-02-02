@@ -19,6 +19,5 @@ public class ApproveRegistryService {
         ApproveRegistry approveRegistry = ApproveRegistry.builder()
                 .document(document).build();
         registryRepository.save(approveRegistry);
-        throw new RuntimeException();
     }
 }
