@@ -1,0 +1,20 @@
+spring:
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-master.yaml
+  datasource:
+    url: jdbc:postgresql://localhost:5432/docstool
+    username: postgres
+    password: postgres
+  application:
+    name: DocumentApplication
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate.hibernate.format_sql: true
+server:
+  port: 8080
+
+properties:
+  workers:
+    batchsize: ${WORKER_BATCHSIZE:50}

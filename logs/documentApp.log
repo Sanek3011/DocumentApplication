@@ -1,0 +1,1314 @@
+2026-02-02 02:21:59 INFO  c.h.d.DocumentApplication - Starting DocumentApplication using Java 21.0.7 with PID 35568 (/Users/alex/Desktop/TESTZADANIE/documentApp/documentApplication/target/classes started by alex in /Users/alex/Desktop/TESTZADANIE/documentApp)
+2026-02-02 02:21:59 INFO  c.h.d.DocumentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-02 02:22:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-02 02:22:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2026-02-02 02:22:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-02 02:22:00 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-02 02:22:00 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-02 02:22:00 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-02 02:22:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-02 02:22:00 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 555 ms
+2026-02-02 02:22:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-02 02:22:00 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@19526f1d
+2026-02-02 02:22:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-02 02:22:00 INFO  liquibase.database - Set default schema name to public
+2026-02-02 02:22:00 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 02:22:00 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 02:22:00 INFO  liquibase.util - UPDATE SUMMARY
+2026-02-02 02:22:00 INFO  liquibase.util - Run:                          0
+2026-02-02 02:22:00 INFO  liquibase.util - Previously run:               1
+2026-02-02 02:22:00 INFO  liquibase.util - Filtered out:                 0
+2026-02-02 02:22:00 INFO  liquibase.util - -------------------------------
+2026-02-02 02:22:00 INFO  liquibase.util - Total change sets:            1
+2026-02-02 02:22:00 INFO  liquibase.util - Update summary generated
+2026-02-02 02:22:00 INFO  liquibase.lockservice - Successfully released change log lock
+2026-02-02 02:22:00 INFO  liquibase.command - Command execution complete
+2026-02-02 02:22:00 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-02 02:22:00 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-02 02:22:00 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-02 02:22:00 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-02 02:22:01 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-02 02:22:01 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 02:22:01 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-02 02:22:01 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-02 02:22:01 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2026-02-02 02:22:01 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-02-02 02:22:01 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2026-02-02 02:22:01 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2026-02-02 02:22:01 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-02-02 02:22:01 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2026-02-02 02:22:01 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2026-02-02 02:22:01 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@a256322
+2026-02-02 02:22:01 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-02 02:22:01 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-02-02 02:22:01 INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2026-02-02 02:22:01 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2026-02-02 02:22:01 INFO  c.h.d.DocumentApplication - Started DocumentApplication in 2.237 seconds (process running for 2.648)
+2026-02-02 02:22:02 INFO  c.h.d.service.WorkersService - 2026-02-02T02:22:02.001710: SUBMIT-worker отправка пачки размером 0 на согласование
+2026-02-02 02:22:02 INFO  c.h.d.service.WorkersService - 2026-02-02T02:22:02.001711: SUBMIT-worker отправка пачки размером 0 на утверждение
+2026-02-02 02:22:02 INFO  c.h.d.service.BatchProcessService - Принято к обработке согласования 0 документов
+2026-02-02 02:22:02 INFO  c.h.d.service.BatchProcessService - Найдено 0 документов
+2026-02-02 02:22:02 INFO  c.h.d.service.BatchProcessService - Принято к обработке утверждения 0 документов
+2026-02-02 02:22:02 INFO  c.h.d.service.BatchProcessService - Обработано успешно 0/0
+2026-02-02 02:22:18 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 02:22:18 INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2026-02-02 02:22:18 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2026-02-02 02:22:18 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 02:22:18 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2026-02-02 02:22:18 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 02:22:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-02 02:22:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-02 02:23:07 INFO  c.h.d.DocumentApplication - Starting DocumentApplication using Java 21.0.7 with PID 35602 (/Users/alex/Desktop/TESTZADANIE/documentApp/documentApplication/target/classes started by alex in /Users/alex/Desktop/TESTZADANIE/documentApp)
+2026-02-02 02:23:07 INFO  c.h.d.DocumentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-02 02:23:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-02 02:23:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2026-02-02 02:23:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-02 02:23:07 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-02 02:23:07 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-02 02:23:07 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-02 02:23:07 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-02 02:23:07 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 474 ms
+2026-02-02 02:23:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-02 02:23:07 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4ea1aa52
+2026-02-02 02:23:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-02 02:23:07 INFO  liquibase.database - Set default schema name to public
+2026-02-02 02:23:08 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 02:23:08 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 02:23:08 INFO  liquibase.util - UPDATE SUMMARY
+2026-02-02 02:23:08 INFO  liquibase.util - Run:                          0
+2026-02-02 02:23:08 INFO  liquibase.util - Previously run:               1
+2026-02-02 02:23:08 INFO  liquibase.util - Filtered out:                 0
+2026-02-02 02:23:08 INFO  liquibase.util - -------------------------------
+2026-02-02 02:23:08 INFO  liquibase.util - Total change sets:            1
+2026-02-02 02:23:08 INFO  liquibase.util - Update summary generated
+2026-02-02 02:23:08 INFO  liquibase.lockservice - Successfully released change log lock
+2026-02-02 02:23:08 INFO  liquibase.command - Command execution complete
+2026-02-02 02:23:08 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-02 02:23:08 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-02 02:23:08 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-02 02:23:08 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-02 02:23:08 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-02 02:23:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 02:23:08 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-02 02:23:08 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-02 02:23:09 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2026-02-02 02:23:09 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-02-02 02:23:09 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2026-02-02 02:23:09 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2026-02-02 02:23:09 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-02-02 02:23:09 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2026-02-02 02:23:09 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2026-02-02 02:23:09 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@bbccb5f
+2026-02-02 02:23:09 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-02 02:23:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-02-02 02:23:09 INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2026-02-02 02:23:09 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2026-02-02 02:23:09 INFO  c.h.d.DocumentApplication - Started DocumentApplication in 2.0 seconds (process running for 2.312)
+2026-02-02 02:26:12 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-02 02:26:12 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-02 02:26:12 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-02-02 02:26:12 INFO  c.h.d.c.DocumentRestController - К созданию принято 5 документов
+2026-02-02 02:26:12 INFO  c.h.d.service.DocumentService - 2026-02-02T02:26:12.142433 : Успешно сохранен документ Document(id=11, uuid=0a5f2904-2a70-45fa-8a36-e0b5e27343f8, author=Author:0, title=Title:0, status=DRAFT, createdAt=2026-02-02T02:26:12.142433, updatedAt=2026-02-02T02:26:12.142500, actions=null), 0a5f2904-2a70-45fa-8a36-e0b5e27343f8 из 5
+2026-02-02 02:26:12 INFO  c.h.d.service.DocumentService - 2026-02-02T02:26:12.153825 : Успешно сохранен документ Document(id=12, uuid=35c20c96-1051-4e39-82a7-cae6b92e16a3, author=Author:1, title=Title:1, status=DRAFT, createdAt=2026-02-02T02:26:12.153825, updatedAt=2026-02-02T02:26:12.153838, actions=null), 35c20c96-1051-4e39-82a7-cae6b92e16a3 из 5
+2026-02-02 02:26:12 INFO  c.h.d.service.DocumentService - 2026-02-02T02:26:12.155975 : Успешно сохранен документ Document(id=13, uuid=d96248fa-8e91-40ce-8030-9d852123e15a, author=Author:2, title=Title:2, status=DRAFT, createdAt=2026-02-02T02:26:12.155975, updatedAt=2026-02-02T02:26:12.155984, actions=null), d96248fa-8e91-40ce-8030-9d852123e15a из 5
+2026-02-02 02:26:12 INFO  c.h.d.service.DocumentService - 2026-02-02T02:26:12.158132 : Успешно сохранен документ Document(id=14, uuid=dbb5dec5-5c02-46bf-94db-36547d0f5af9, author=Author:3, title=Title:3, status=DRAFT, createdAt=2026-02-02T02:26:12.158132, updatedAt=2026-02-02T02:26:12.158141, actions=null), dbb5dec5-5c02-46bf-94db-36547d0f5af9 из 5
+2026-02-02 02:26:12 INFO  c.h.d.service.DocumentService - 2026-02-02T02:26:12.159987 : Успешно сохранен документ Document(id=15, uuid=bae62745-c7ad-4cb5-acbf-78a8f7211d9a, author=Author:4, title=Title:4, status=DRAFT, createdAt=2026-02-02T02:26:12.159987, updatedAt=2026-02-02T02:26:12.159995, actions=null), bae62745-c7ad-4cb5-acbf-78a8f7211d9a из 5
+2026-02-02 02:26:12 INFO  c.h.d.service.DocumentService - Создано 5/5 документов
+2026-02-02 02:26:30 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 02:26:30 INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2026-02-02 02:26:30 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2026-02-02 02:26:30 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 02:26:30 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2026-02-02 02:26:30 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 02:26:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-02 02:26:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-02 02:27:46 INFO  c.h.d.DocumentApplication - Starting DocumentApplication using Java 21.0.7 with PID 35798 (/Users/alex/Desktop/TESTZADANIE/documentApp/documentApplication/target/classes started by alex in /Users/alex/Desktop/TESTZADANIE/documentApp)
+2026-02-02 02:27:46 INFO  c.h.d.DocumentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-02 02:27:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-02 02:27:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 3 JPA repository interfaces.
+2026-02-02 02:27:46 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-02 02:27:46 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-02 02:27:46 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-02 02:27:46 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-02 02:27:46 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-02 02:27:46 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 498 ms
+2026-02-02 02:27:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-02 02:27:46 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37314843
+2026-02-02 02:27:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-02 02:27:47 INFO  liquibase.database - Set default schema name to public
+2026-02-02 02:27:47 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 02:27:47 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 02:27:47 INFO  liquibase.util - UPDATE SUMMARY
+2026-02-02 02:27:47 INFO  liquibase.util - Run:                          0
+2026-02-02 02:27:47 INFO  liquibase.util - Previously run:               1
+2026-02-02 02:27:47 INFO  liquibase.util - Filtered out:                 0
+2026-02-02 02:27:47 INFO  liquibase.util - -------------------------------
+2026-02-02 02:27:47 INFO  liquibase.util - Total change sets:            1
+2026-02-02 02:27:47 INFO  liquibase.util - Update summary generated
+2026-02-02 02:27:47 INFO  liquibase.lockservice - Successfully released change log lock
+2026-02-02 02:27:47 INFO  liquibase.command - Command execution complete
+2026-02-02 02:27:47 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-02 02:27:47 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-02 02:27:47 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-02 02:27:47 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-02 02:27:47 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-02 02:27:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 02:27:47 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-02 02:27:48 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-02 02:27:48 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2026-02-02 02:27:48 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-02-02 02:27:48 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2026-02-02 02:27:48 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2026-02-02 02:27:48 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-02-02 02:27:48 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2026-02-02 02:27:48 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2026-02-02 02:27:48 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@b692323
+2026-02-02 02:27:48 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-02 02:27:48 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-02-02 02:27:48 INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2026-02-02 02:27:48 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2026-02-02 02:27:48 INFO  c.h.d.DocumentApplication - Started DocumentApplication in 2.029 seconds (process running for 2.334)
+2026-02-02 02:27:48 INFO  c.h.d.service.WorkersService - 2026-02-02T02:27:48.302339: SUBMIT-worker отправка пачки размером 5 на согласование
+2026-02-02 02:27:48 INFO  c.h.d.service.BatchProcessService - Принято к обработке согласования 5 документов
+2026-02-02 02:27:48 INFO  c.h.d.service.BatchProcessService - Найдено 5 документов
+2026-02-02 02:27:48 INFO  c.h.d.service.BatchProcessService - Документ 0a5f2904-2a70-45fa-8a36-e0b5e27343f8 успешно согласован. 0/5
+2026-02-02 02:27:48 INFO  c.h.d.service.BatchProcessService - Документ 35c20c96-1051-4e39-82a7-cae6b92e16a3 успешно согласован. 1/5
+2026-02-02 02:27:48 INFO  c.h.d.service.BatchProcessService - Документ d96248fa-8e91-40ce-8030-9d852123e15a успешно согласован. 2/5
+2026-02-02 02:27:48 INFO  c.h.d.service.BatchProcessService - Документ dbb5dec5-5c02-46bf-94db-36547d0f5af9 успешно согласован. 3/5
+2026-02-02 02:27:48 INFO  c.h.d.service.BatchProcessService - Документ bae62745-c7ad-4cb5-acbf-78a8f7211d9a успешно согласован. 4/5
+2026-02-02 02:27:48 INFO  c.h.d.service.BatchProcessService - Обработано успешно 5/5
+2026-02-02 02:28:13 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 02:28:13 INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2026-02-02 02:28:13 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2026-02-02 02:28:13 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 02:28:13 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2026-02-02 02:28:13 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 02:28:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-02 02:28:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-02 02:32:06 INFO  c.h.d.DocumentApplication - Starting DocumentApplication using Java 21.0.7 with PID 35919 (/Users/alex/Desktop/TESTZADANIE/documentApp/documentApplication/target/classes started by alex in /Users/alex/Desktop/TESTZADANIE/documentApp)
+2026-02-02 02:32:06 INFO  c.h.d.DocumentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-02 02:32:06 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-02 02:32:06 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2026-02-02 02:32:06 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-02 02:32:06 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-02 02:32:06 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-02 02:32:06 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-02 02:32:06 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-02 02:32:06 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 485 ms
+2026-02-02 02:32:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-02 02:32:06 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1282e98
+2026-02-02 02:32:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-02 02:32:06 INFO  liquibase.database - Set default schema name to public
+2026-02-02 02:32:06 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 02:32:06 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 02:32:06 INFO  liquibase.util - UPDATE SUMMARY
+2026-02-02 02:32:06 INFO  liquibase.util - Run:                          0
+2026-02-02 02:32:06 INFO  liquibase.util - Previously run:               1
+2026-02-02 02:32:06 INFO  liquibase.util - Filtered out:                 0
+2026-02-02 02:32:06 INFO  liquibase.util - -------------------------------
+2026-02-02 02:32:06 INFO  liquibase.util - Total change sets:            1
+2026-02-02 02:32:06 INFO  liquibase.util - Update summary generated
+2026-02-02 02:32:06 INFO  liquibase.lockservice - Successfully released change log lock
+2026-02-02 02:32:06 INFO  liquibase.command - Command execution complete
+2026-02-02 02:32:06 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-02 02:32:06 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-02 02:32:06 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-02 02:32:07 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-02 02:32:07 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-02 02:32:07 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 02:32:07 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-02 02:32:07 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-02 02:32:07 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2026-02-02 02:32:07 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-02-02 02:32:07 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2026-02-02 02:32:07 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2026-02-02 02:32:07 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-02-02 02:32:07 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2026-02-02 02:32:07 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2026-02-02 02:32:07 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@71962018
+2026-02-02 02:32:08 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-02 02:32:08 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-02-02 02:32:08 INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2026-02-02 02:32:08 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2026-02-02 02:32:08 INFO  c.h.d.DocumentApplication - Started DocumentApplication in 2.03 seconds (process running for 2.332)
+2026-02-02 02:32:08 INFO  c.h.d.service.WorkersService - 2026-02-02T02:32:08.063749: SUBMIT-worker отправка пачки размером 5 на утверждение
+2026-02-02 02:32:08 INFO  c.h.d.service.BatchProcessService - Принято к обработке утверждения 5 документов
+2026-02-02 02:32:08 INFO  c.h.d.service.BatchProcessService - Документ 0a5f2904-2a70-45fa-8a36-e0b5e27343f8 успешно согласован. 1/5
+2026-02-02 02:32:08 INFO  c.h.d.service.BatchProcessService - Обработано успешно 1/5
+2026-02-02 02:32:08 INFO  c.h.d.service.BatchProcessService - Документ 35c20c96-1051-4e39-82a7-cae6b92e16a3 успешно согласован. 2/5
+2026-02-02 02:32:08 INFO  c.h.d.service.BatchProcessService - Обработано успешно 2/5
+2026-02-02 02:32:08 INFO  c.h.d.service.BatchProcessService - Документ d96248fa-8e91-40ce-8030-9d852123e15a успешно согласован. 3/5
+2026-02-02 02:32:08 INFO  c.h.d.service.BatchProcessService - Обработано успешно 3/5
+2026-02-02 02:32:08 INFO  c.h.d.service.BatchProcessService - Документ dbb5dec5-5c02-46bf-94db-36547d0f5af9 успешно согласован. 4/5
+2026-02-02 02:32:08 INFO  c.h.d.service.BatchProcessService - Обработано успешно 4/5
+2026-02-02 02:32:08 INFO  c.h.d.service.BatchProcessService - Документ bae62745-c7ad-4cb5-acbf-78a8f7211d9a успешно согласован. 5/5
+2026-02-02 02:32:08 INFO  c.h.d.service.BatchProcessService - Обработано успешно 5/5
+2026-02-02 02:33:02 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-02 02:33:02 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-02 02:33:02 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-02-02 02:33:02 INFO  c.h.d.c.DocumentRestController - К созданию принято 5 документов
+2026-02-02 02:33:02 INFO  c.h.d.service.DocumentService - 2026-02-02T02:33:02.052545 : Успешно сохранен документ eca2e9ff-d664-4b71-ac21-86d05c82d36a, 0 из 5
+2026-02-02 02:33:02 INFO  c.h.d.service.DocumentService - 2026-02-02T02:33:02.056159 : Успешно сохранен документ e2d973db-f929-4197-b73d-851d7e74d658, 1 из 5
+2026-02-02 02:33:02 INFO  c.h.d.service.DocumentService - 2026-02-02T02:33:02.057709 : Успешно сохранен документ 087ba629-0605-4640-9bde-6f264d124218, 2 из 5
+2026-02-02 02:33:02 INFO  c.h.d.service.DocumentService - 2026-02-02T02:33:02.059160 : Успешно сохранен документ 8246945f-5a8d-462e-b434-5b3b02eff645, 3 из 5
+2026-02-02 02:33:02 INFO  c.h.d.service.DocumentService - 2026-02-02T02:33:02.060970 : Успешно сохранен документ 0078b8e6-54cd-498a-bd95-3fd7022d9fc4, 4 из 5
+2026-02-02 02:33:02 INFO  c.h.d.service.DocumentService - Создано 5/5 документов
+2026-02-02 02:33:08 INFO  c.h.d.service.WorkersService - 2026-02-02T02:33:08.076954: SUBMIT-worker отправка пачки размером 5 на согласование
+2026-02-02 02:33:08 INFO  c.h.d.service.BatchProcessService - Принято к обработке согласования 5 документов
+2026-02-02 02:33:08 INFO  c.h.d.service.BatchProcessService - Найдено 5 документов
+2026-02-02 02:33:08 INFO  c.h.d.service.BatchProcessService - Документ eca2e9ff-d664-4b71-ac21-86d05c82d36a успешно согласован. 1/5
+2026-02-02 02:33:08 INFO  c.h.d.service.BatchProcessService - Документ e2d973db-f929-4197-b73d-851d7e74d658 успешно согласован. 2/5
+2026-02-02 02:33:08 INFO  c.h.d.service.BatchProcessService - Документ 087ba629-0605-4640-9bde-6f264d124218 успешно согласован. 3/5
+2026-02-02 02:33:08 INFO  c.h.d.service.BatchProcessService - Документ 8246945f-5a8d-462e-b434-5b3b02eff645 успешно согласован. 4/5
+2026-02-02 02:33:08 INFO  c.h.d.service.BatchProcessService - Документ 0078b8e6-54cd-498a-bd95-3fd7022d9fc4 успешно согласован. 5/5
+2026-02-02 02:33:08 INFO  c.h.d.service.BatchProcessService - Обработано успешно 5/5
+2026-02-02 02:33:08 INFO  c.h.d.service.WorkersService - 2026-02-02T02:33:08.176770: SUBMIT-worker отправка пачки размером 5 на утверждение
+2026-02-02 02:33:08 INFO  c.h.d.service.BatchProcessService - Принято к обработке утверждения 5 документов
+2026-02-02 02:33:08 INFO  c.h.d.service.BatchProcessService - Документ eca2e9ff-d664-4b71-ac21-86d05c82d36a успешно согласован. 1/5
+2026-02-02 02:33:08 INFO  c.h.d.service.BatchProcessService - Обработано успешно 1/5
+2026-02-02 02:33:08 INFO  c.h.d.service.BatchProcessService - Документ e2d973db-f929-4197-b73d-851d7e74d658 успешно согласован. 2/5
+2026-02-02 02:33:08 INFO  c.h.d.service.BatchProcessService - Обработано успешно 2/5
+2026-02-02 02:33:08 INFO  c.h.d.service.BatchProcessService - Документ 087ba629-0605-4640-9bde-6f264d124218 успешно согласован. 3/5
+2026-02-02 02:33:08 INFO  c.h.d.service.BatchProcessService - Обработано успешно 3/5
+2026-02-02 02:33:08 INFO  c.h.d.service.BatchProcessService - Документ 8246945f-5a8d-462e-b434-5b3b02eff645 успешно согласован. 4/5
+2026-02-02 02:33:08 INFO  c.h.d.service.BatchProcessService - Обработано успешно 4/5
+2026-02-02 02:33:08 INFO  c.h.d.service.BatchProcessService - Документ 0078b8e6-54cd-498a-bd95-3fd7022d9fc4 успешно согласован. 5/5
+2026-02-02 02:33:08 INFO  c.h.d.service.BatchProcessService - Обработано успешно 5/5
+2026-02-02 02:37:16 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 02:37:16 INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2026-02-02 02:37:16 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2026-02-02 02:37:16 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 02:37:16 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2026-02-02 02:37:16 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 02:37:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-02 02:37:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-02 02:37:23 INFO  c.h.d.DocumentApplication - Starting DocumentApplication using Java 21.0.7 with PID 36072 (/Users/alex/Desktop/TESTZADANIE/documentApp/documentApplication/target/classes started by alex in /Users/alex/Desktop/TESTZADANIE/documentApp)
+2026-02-02 02:37:23 INFO  c.h.d.DocumentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-02 02:37:23 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-02 02:37:23 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2026-02-02 02:37:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-02 02:37:23 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-02 02:37:23 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-02 02:37:23 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-02 02:37:23 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-02 02:37:23 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 502 ms
+2026-02-02 02:37:23 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-02 02:37:23 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@69f080ad
+2026-02-02 02:37:23 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-02 02:37:23 INFO  liquibase.database - Set default schema name to public
+2026-02-02 02:37:23 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 02:37:23 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 02:37:23 INFO  liquibase.util - UPDATE SUMMARY
+2026-02-02 02:37:23 INFO  liquibase.util - Run:                          0
+2026-02-02 02:37:23 INFO  liquibase.util - Previously run:               1
+2026-02-02 02:37:23 INFO  liquibase.util - Filtered out:                 0
+2026-02-02 02:37:23 INFO  liquibase.util - -------------------------------
+2026-02-02 02:37:23 INFO  liquibase.util - Total change sets:            1
+2026-02-02 02:37:23 INFO  liquibase.util - Update summary generated
+2026-02-02 02:37:23 INFO  liquibase.lockservice - Successfully released change log lock
+2026-02-02 02:37:23 INFO  liquibase.command - Command execution complete
+2026-02-02 02:37:23 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-02 02:37:23 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-02 02:37:24 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-02 02:37:24 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-02 02:37:24 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-02 02:37:24 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 02:37:24 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-02 02:37:24 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-02 02:37:25 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2026-02-02 02:37:25 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-02-02 02:37:25 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2026-02-02 02:37:25 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2026-02-02 02:37:25 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-02-02 02:37:25 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2026-02-02 02:37:25 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2026-02-02 02:37:25 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2dd631c5
+2026-02-02 02:37:25 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-02 02:37:25 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-02-02 02:37:25 INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2026-02-02 02:37:25 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2026-02-02 02:37:25 INFO  c.h.d.DocumentApplication - Started DocumentApplication in 2.054 seconds (process running for 2.381)
+2026-02-02 02:37:32 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-02 02:37:32 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-02 02:37:32 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-02-02 02:37:33 INFO  c.h.d.c.DocumentRestController - К созданию принято 5 документов
+2026-02-02 02:37:33 INFO  c.h.d.service.DocumentService - 2026-02-02T02:37:33.066340 : Успешно сохранен документ 47e15c6d-5c9d-4697-b45b-81b21d64d829, 1 из 5
+2026-02-02 02:37:33 INFO  c.h.d.service.DocumentService - 2026-02-02T02:37:33.076566 : Успешно сохранен документ b89ba0b5-7150-48ef-92fb-37833fea8222, 2 из 5
+2026-02-02 02:37:33 INFO  c.h.d.service.DocumentService - 2026-02-02T02:37:33.078288 : Успешно сохранен документ c98cd378-b40b-44f2-b0a6-71a34c2d8868, 3 из 5
+2026-02-02 02:37:33 INFO  c.h.d.service.DocumentService - 2026-02-02T02:37:33.079672 : Успешно сохранен документ aec1de5a-646b-40b7-8590-12a8edaf0455, 4 из 5
+2026-02-02 02:37:33 INFO  c.h.d.service.DocumentService - 2026-02-02T02:37:33.080874 : Успешно сохранен документ 8db9bf52-6c40-42a9-931e-a48fd9420a1a, 5 из 5
+2026-02-02 02:37:33 INFO  c.h.d.service.DocumentService - Создано 5/5 документов
+2026-02-02 02:38:25 INFO  c.h.d.service.WorkersService - 2026-02-02T02:38:25.095348: SUBMIT-worker отправка пачки размером 5 на согласование
+2026-02-02 02:38:25 INFO  c.h.d.service.BatchProcessService - [SUBMIT-worker] Принято к обработке согласования 5 документов
+2026-02-02 02:38:25 INFO  c.h.d.service.BatchProcessService - [SUBMIT-worker] Документ 47e15c6d-5c9d-4697-b45b-81b21d64d829 успешно согласован. 1/5
+2026-02-02 02:38:25 INFO  c.h.d.service.BatchProcessService - [SUBMIT-worker] Документ b89ba0b5-7150-48ef-92fb-37833fea8222 успешно согласован. 2/5
+2026-02-02 02:38:25 INFO  c.h.d.service.BatchProcessService - [SUBMIT-worker] Документ c98cd378-b40b-44f2-b0a6-71a34c2d8868 успешно согласован. 3/5
+2026-02-02 02:38:25 INFO  c.h.d.service.BatchProcessService - [SUBMIT-worker] Документ aec1de5a-646b-40b7-8590-12a8edaf0455 успешно согласован. 4/5
+2026-02-02 02:38:25 INFO  c.h.d.service.BatchProcessService - [SUBMIT-worker] Документ 8db9bf52-6c40-42a9-931e-a48fd9420a1a успешно согласован. 5/5
+2026-02-02 02:38:25 INFO  c.h.d.service.BatchProcessService - [SUBMIT-worker] Обработано успешно 5/5
+2026-02-02 02:38:34 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 02:38:34 INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2026-02-02 02:38:34 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2026-02-02 02:38:34 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 02:38:34 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2026-02-02 02:38:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 02:38:34 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-02 02:38:34 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-02 02:44:41 INFO  c.h.d.DocumentApplication - Starting DocumentApplication using Java 21.0.7 with PID 36297 (/Users/alex/Desktop/TESTZADANIE/documentApp/documentApplication/target/classes started by alex in /Users/alex/Desktop/TESTZADANIE/documentApp)
+2026-02-02 02:44:41 INFO  c.h.d.DocumentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-02 02:44:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-02 02:44:42 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 3 JPA repository interfaces.
+2026-02-02 02:44:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-02 02:44:42 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-02 02:44:42 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-02 02:44:42 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-02 02:44:42 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-02 02:44:42 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 544 ms
+2026-02-02 02:44:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-02 02:44:43 ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2825)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:175)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:313)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:283)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.hh.documentapplication.DocumentApplication.main(DocumentApplication.java:12)
+2026-02-02 02:44:43 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+2026-02-02 02:44:43 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-02 02:44:43 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-02 02:44:43 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.hh.documentapplication.DocumentApplication.main(DocumentApplication.java:12)
+Caused by: liquibase.exception.DatabaseException: org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 18 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2825)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:175)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:313)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:283)
+	... 20 common frames omitted
+2026-02-02 02:45:25 INFO  c.h.d.DocumentApplication - Starting DocumentApplication using Java 21.0.7 with PID 36321 (/Users/alex/Desktop/TESTZADANIE/documentApp/documentApplication/target/classes started by alex in /Users/alex/Desktop/TESTZADANIE/documentApp)
+2026-02-02 02:45:25 INFO  c.h.d.DocumentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-02 02:45:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-02 02:45:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2026-02-02 02:45:26 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-02 02:45:26 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-02 02:45:26 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-02 02:45:26 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-02 02:45:26 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-02 02:45:26 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 470 ms
+2026-02-02 02:45:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-02 02:45:27 ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2825)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:175)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:313)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:283)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.hh.documentapplication.DocumentApplication.main(DocumentApplication.java:12)
+2026-02-02 02:45:27 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+2026-02-02 02:45:27 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-02 02:45:27 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-02 02:45:27 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.hh.documentapplication.DocumentApplication.main(DocumentApplication.java:12)
+Caused by: liquibase.exception.DatabaseException: org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 18 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2825)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:175)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:313)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:283)
+	... 20 common frames omitted
+2026-02-02 02:47:24 ERROR o.s.boot.SpringApplication - Application run failed
+org.yaml.snakeyaml.scanner.ScannerException: while scanning a simple key
+ in 'reader', line 4, column 5:
+        .
+        ^
+could not find expected ':'
+ in 'reader', line 5, column 3:
+      datasource:
+      ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.stalePossibleSimpleKeys(ScannerImpl.java:502)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.needMoreTokens(ScannerImpl.java:307)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:237)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:637)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:161)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:57)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector$1.peek(CommentEventsCollector.java:43)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:136)
+	at org.yaml.snakeyaml.comments.CommentEventsCollector.collectEvents(CommentEventsCollector.java:116)
+	at org.yaml.snakeyaml.composer.Composer.composeScalarNode(Composer.java:241)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:205)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:369)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:348)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:323)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:209)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:131)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:162)
+	at org.springframework.boot.env.OriginTrackedYamlLoader$OriginTrackingConstructor.getData(OriginTrackedYamlLoader.java:99)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:515)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:203)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:169)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:84)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:54)
+	at org.springframework.boot.context.config.StandardConfigDataLoader.load(StandardConfigDataLoader.java:36)
+	at org.springframework.boot.context.config.ConfigDataLoaders.load(ConfigDataLoaders.java:96)
+	at org.springframework.boot.context.config.ConfigDataImporter.load(ConfigDataImporter.java:132)
+	at org.springframework.boot.context.config.ConfigDataImporter.resolveAndLoad(ConfigDataImporter.java:87)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentContributors.withProcessedImports(ConfigDataEnvironmentContributors.java:115)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processInitial(ConfigDataEnvironment.java:242)
+	at org.springframework.boot.context.config.ConfigDataEnvironment.processAndApply(ConfigDataEnvironment.java:229)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:96)
+	at org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor.postProcessEnvironment(ConfigDataEnvironmentPostProcessor.java:89)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEnvironmentPreparedEvent(EnvironmentPostProcessorApplicationListener.java:109)
+	at org.springframework.boot.env.EnvironmentPostProcessorApplicationListener.onApplicationEvent(EnvironmentPostProcessorApplicationListener.java:94)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:329)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.hh.documentapplication.DocumentApplication.main(DocumentApplication.java:12)
+2026-02-02 02:47:44 INFO  c.h.d.DocumentApplication - Starting DocumentApplication using Java 21.0.7 with PID 36385 (/Users/alex/Desktop/TESTZADANIE/documentApp/documentApplication/target/classes started by alex in /Users/alex/Desktop/TESTZADANIE/documentApp)
+2026-02-02 02:47:44 INFO  c.h.d.DocumentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-02 02:47:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-02 02:47:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 3 JPA repository interfaces.
+2026-02-02 02:47:45 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-02 02:47:45 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-02 02:47:45 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-02 02:47:45 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-02 02:47:45 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-02 02:47:45 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 503 ms
+2026-02-02 02:47:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-02 02:47:46 ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2825)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:175)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:313)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:283)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.hh.documentapplication.DocumentApplication.main(DocumentApplication.java:12)
+2026-02-02 02:47:46 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+2026-02-02 02:47:46 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-02 02:47:46 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-02 02:47:46 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.hh.documentapplication.DocumentApplication.main(DocumentApplication.java:12)
+Caused by: liquibase.exception.DatabaseException: org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 18 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2825)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:175)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:313)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:283)
+	... 20 common frames omitted
+2026-02-02 02:49:32 INFO  c.h.d.DocumentApplication - Starting DocumentApplication using Java 21.0.7 with PID 36440 (/Users/alex/Desktop/TESTZADANIE/documentApp/documentApplication/target/classes started by alex in /Users/alex/Desktop/TESTZADANIE/documentApp)
+2026-02-02 02:49:32 INFO  c.h.d.DocumentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-02 02:49:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-02 02:49:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2026-02-02 02:49:33 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-02 02:49:33 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-02 02:49:33 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-02 02:49:33 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-02 02:49:33 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-02 02:49:33 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 536 ms
+2026-02-02 02:49:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-02 02:49:34 ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2825)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:175)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:313)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:283)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.hh.documentapplication.DocumentApplication.main(DocumentApplication.java:12)
+2026-02-02 02:49:34 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+2026-02-02 02:49:34 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-02 02:49:34 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-02 02:49:34 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.hh.documentapplication.DocumentApplication.main(DocumentApplication.java:12)
+Caused by: liquibase.exception.DatabaseException: org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 18 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: database "docstool" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2825)
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:175)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:313)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:283)
+	... 20 common frames omitted
+2026-02-02 03:41:06 INFO  c.h.d.DocumentApplication - Starting DocumentApplication using Java 21.0.7 with PID 38073 (/Users/alex/Desktop/TESTZADANIE/documentApp/documentApplication/target/classes started by alex in /Users/alex/Desktop/TESTZADANIE/documentApp)
+2026-02-02 03:41:06 INFO  c.h.d.DocumentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-02 03:41:06 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-02 03:41:06 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2026-02-02 03:41:06 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-02 03:41:06 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-02 03:41:06 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-02 03:41:06 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-02 03:41:06 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-02 03:41:06 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 541 ms
+2026-02-02 03:41:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-02 03:41:06 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@407b8435
+2026-02-02 03:41:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-02 03:41:06 INFO  liquibase.database - Set default schema name to public
+2026-02-02 03:41:07 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 03:41:07 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 03:41:07 INFO  liquibase.util - UPDATE SUMMARY
+2026-02-02 03:41:07 INFO  liquibase.util - Run:                          0
+2026-02-02 03:41:07 INFO  liquibase.util - Previously run:              12
+2026-02-02 03:41:07 INFO  liquibase.util - Filtered out:                 0
+2026-02-02 03:41:07 INFO  liquibase.util - -------------------------------
+2026-02-02 03:41:07 INFO  liquibase.util - Total change sets:           12
+2026-02-02 03:41:07 INFO  liquibase.util - Update summary generated
+2026-02-02 03:41:07 INFO  liquibase.lockservice - Successfully released change log lock
+2026-02-02 03:41:07 INFO  liquibase.command - Command execution complete
+2026-02-02 03:41:07 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-02 03:41:07 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-02 03:41:07 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-02 03:41:07 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-02 03:41:07 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-02 03:41:07 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 03:41:07 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-02 03:41:08 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-02 03:41:08 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2026-02-02 03:41:08 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-02-02 03:41:08 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2026-02-02 03:41:08 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2026-02-02 03:41:08 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-02-02 03:41:08 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2026-02-02 03:41:08 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2026-02-02 03:41:08 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6f469aef
+2026-02-02 03:41:08 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-02 03:41:08 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-02-02 03:41:08 INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2026-02-02 03:41:08 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2026-02-02 03:41:08 INFO  c.h.d.DocumentApplication - Started DocumentApplication in 2.343 seconds (process running for 2.654)
+2026-02-02 03:41:14 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-02 03:41:14 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-02 03:41:14 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-02-02 03:41:54 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 03:41:54 INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2026-02-02 03:41:54 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2026-02-02 03:41:54 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 03:41:54 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2026-02-02 03:41:54 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 03:41:54 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-02 03:41:54 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-02 18:13:21 INFO  c.h.d.DocumentApplication - Starting DocumentApplication using Java 21.0.7 with PID 39915 (/Users/alex/Desktop/TESTZADANIE/documentApp/documentApplication/target/classes started by alex in /Users/alex/Desktop/TESTZADANIE/documentApp)
+2026-02-02 18:13:21 INFO  c.h.d.DocumentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-02 18:13:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-02 18:13:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 3 JPA repository interfaces.
+2026-02-02 18:13:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-02 18:13:21 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-02 18:13:21 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-02 18:13:21 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-02 18:13:21 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-02 18:13:21 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 487 ms
+2026-02-02 18:13:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-02 18:13:22 ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:354)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:283)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.hh.documentapplication.DocumentApplication.main(DocumentApplication.java:12)
+Caused by: java.net.UnknownHostException: localhost
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 32 common frames omitted
+2026-02-02 18:13:22 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+2026-02-02 18:13:22 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-02 18:13:22 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-02 18:13:22 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.hh.documentapplication.DocumentApplication.main(DocumentApplication.java:12)
+Caused by: liquibase.exception.DatabaseException: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 18 common frames omitted
+Caused by: org.postgresql.util.PSQLException: Ошибка при попытке подсоединения.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:354)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:283)
+	... 20 common frames omitted
+Caused by: java.net.UnknownHostException: localhost
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	... 32 common frames omitted
+2026-02-02 18:13:25 INFO  c.h.d.DocumentApplication - Starting DocumentApplication using Java 21.0.7 with PID 39923 (/Users/alex/Desktop/TESTZADANIE/documentApp/documentApplication/target/classes started by alex in /Users/alex/Desktop/TESTZADANIE/documentApp)
+2026-02-02 18:13:25 INFO  c.h.d.DocumentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-02 18:13:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-02 18:13:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2026-02-02 18:13:26 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-02 18:13:26 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-02 18:13:26 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-02 18:13:26 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-02 18:13:26 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-02 18:13:26 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 516 ms
+2026-02-02 18:13:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-02 18:13:26 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@718989fa
+2026-02-02 18:13:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-02 18:13:26 INFO  liquibase.database - Set default schema name to public
+2026-02-02 18:13:26 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 18:13:26 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 18:13:26 INFO  liquibase.util - UPDATE SUMMARY
+2026-02-02 18:13:26 INFO  liquibase.util - Run:                          0
+2026-02-02 18:13:26 INFO  liquibase.util - Previously run:              12
+2026-02-02 18:13:26 INFO  liquibase.util - Filtered out:                 0
+2026-02-02 18:13:26 INFO  liquibase.util - -------------------------------
+2026-02-02 18:13:26 INFO  liquibase.util - Total change sets:           12
+2026-02-02 18:13:26 INFO  liquibase.util - Update summary generated
+2026-02-02 18:13:26 INFO  liquibase.lockservice - Successfully released change log lock
+2026-02-02 18:13:26 INFO  liquibase.command - Command execution complete
+2026-02-02 18:13:26 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-02 18:13:26 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-02 18:13:26 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-02 18:13:27 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-02 18:13:27 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-02 18:13:27 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 18:13:27 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-02 18:13:27 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-02 18:13:27 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2026-02-02 18:13:27 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-02-02 18:13:27 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2026-02-02 18:13:27 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2026-02-02 18:13:27 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-02-02 18:13:27 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2026-02-02 18:13:27 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2026-02-02 18:13:27 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4d52119c
+2026-02-02 18:13:27 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-02 18:13:27 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-02-02 18:13:27 INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2026-02-02 18:13:27 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2026-02-02 18:13:28 INFO  c.h.d.DocumentApplication - Started DocumentApplication in 2.279 seconds (process running for 2.639)
+2026-02-02 18:13:28 INFO  c.h.d.service.WorkersService - 2026-02-02T18:13:28.057149: SUBMIT-worker отправка пачки размером 1 на утверждение
+2026-02-02 18:13:28 INFO  c.h.d.service.BatchProcessService - [APPROVE-worker] Принято к обработке утверждения 1 документов
+2026-02-02 18:13:28 INFO  c.h.d.service.BatchProcessService - [APPROVE-worker] Документ db1f11ba-3064-4e75-bdd1-4dcdd676ac38 успешно согласован. 1/1
+2026-02-02 18:13:28 INFO  c.h.d.service.BatchProcessService - [APPROVE-worker] Обработано успешно 1/1
+2026-02-02 18:13:44 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-02 18:13:44 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-02 18:13:44 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-02-02 18:13:45 INFO  c.h.d.c.DocumentRestController - К созданию принято 5 документов
+2026-02-02 18:13:45 INFO  c.h.d.service.DocumentService - Успешно сохранен документ c29570a2-8e2c-4ecb-9ec4-8f149d45470b, 1 из 5
+2026-02-02 18:13:45 INFO  c.h.d.service.DocumentService - Успешно сохранен документ 30ec56fa-40fa-4fb0-802e-0ca611ba9790, 2 из 5
+2026-02-02 18:13:45 INFO  c.h.d.service.DocumentService - Успешно сохранен документ b14302f6-1679-46d7-960d-ef232f2f2728, 3 из 5
+2026-02-02 18:13:45 INFO  c.h.d.service.DocumentService - Успешно сохранен документ ab7814c0-795e-487a-a631-d223785a1cda, 4 из 5
+2026-02-02 18:13:45 INFO  c.h.d.service.DocumentService - Успешно сохранен документ 47463ada-df8b-4a09-a533-3328beab1805, 5 из 5
+2026-02-02 18:13:45 INFO  c.h.d.service.DocumentService - Создано 5/5 документов
+2026-02-02 18:14:28 INFO  c.h.d.service.WorkersService - 2026-02-02T18:14:28.069666: SUBMIT-worker отправка пачки размером 5 на согласование
+2026-02-02 18:14:28 INFO  c.h.d.service.BatchProcessService - [SUBMIT-worker] Принято к обработке согласования 5 документов
+2026-02-02 18:14:28 INFO  c.h.d.service.BatchProcessService - [SUBMIT-worker] Документ c29570a2-8e2c-4ecb-9ec4-8f149d45470b успешно согласован. 1/5
+2026-02-02 18:14:28 INFO  c.h.d.service.BatchProcessService - [SUBMIT-worker] Документ 30ec56fa-40fa-4fb0-802e-0ca611ba9790 успешно согласован. 2/5
+2026-02-02 18:14:28 INFO  c.h.d.service.BatchProcessService - [SUBMIT-worker] Документ b14302f6-1679-46d7-960d-ef232f2f2728 успешно согласован. 3/5
+2026-02-02 18:14:28 INFO  c.h.d.service.BatchProcessService - [SUBMIT-worker] Документ ab7814c0-795e-487a-a631-d223785a1cda успешно согласован. 4/5
+2026-02-02 18:14:28 INFO  c.h.d.service.BatchProcessService - [SUBMIT-worker] Документ 47463ada-df8b-4a09-a533-3328beab1805 успешно согласован. 5/5
+2026-02-02 18:14:28 INFO  c.h.d.service.BatchProcessService - [SUBMIT-worker] Обработано успешно 5/5
+2026-02-02 18:14:28 INFO  c.h.d.service.WorkersService - 2026-02-02T18:14:28.145331: SUBMIT-worker отправка пачки размером 5 на утверждение
+2026-02-02 18:14:28 INFO  c.h.d.service.BatchProcessService - [APPROVE-worker] Принято к обработке утверждения 5 документов
+2026-02-02 18:14:28 INFO  c.h.d.service.BatchProcessService - [APPROVE-worker] Документ c29570a2-8e2c-4ecb-9ec4-8f149d45470b успешно согласован. 1/5
+2026-02-02 18:14:28 INFO  c.h.d.service.BatchProcessService - [APPROVE-worker] Обработано успешно 1/5
+2026-02-02 18:14:28 INFO  c.h.d.service.BatchProcessService - [APPROVE-worker] Документ 30ec56fa-40fa-4fb0-802e-0ca611ba9790 успешно согласован. 2/5
+2026-02-02 18:14:28 INFO  c.h.d.service.BatchProcessService - [APPROVE-worker] Обработано успешно 2/5
+2026-02-02 18:14:28 INFO  c.h.d.service.BatchProcessService - [APPROVE-worker] Документ b14302f6-1679-46d7-960d-ef232f2f2728 успешно согласован. 3/5
+2026-02-02 18:14:28 INFO  c.h.d.service.BatchProcessService - [APPROVE-worker] Обработано успешно 3/5
+2026-02-02 18:14:28 INFO  c.h.d.service.BatchProcessService - [APPROVE-worker] Документ ab7814c0-795e-487a-a631-d223785a1cda успешно согласован. 4/5
+2026-02-02 18:14:28 INFO  c.h.d.service.BatchProcessService - [APPROVE-worker] Обработано успешно 4/5
+2026-02-02 18:14:28 INFO  c.h.d.service.BatchProcessService - [APPROVE-worker] Документ 47463ada-df8b-4a09-a533-3328beab1805 успешно согласован. 5/5
+2026-02-02 18:14:28 INFO  c.h.d.service.BatchProcessService - [APPROVE-worker] Обработано успешно 5/5
+2026-02-02 18:14:44 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 18:14:44 INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2026-02-02 18:14:44 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2026-02-02 18:14:44 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 18:14:44 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2026-02-02 18:14:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 18:14:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-02 18:14:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-02 18:17:01 INFO  c.h.d.DocumentApplication - Starting DocumentApplication using Java 21.0.7 with PID 40027 (/Users/alex/Desktop/TESTZADANIE/documentApp/documentApplication/target/classes started by alex in /Users/alex/Desktop/TESTZADANIE/documentApp)
+2026-02-02 18:17:01 INFO  c.h.d.DocumentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-02 18:17:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-02 18:17:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 3 JPA repository interfaces.
+2026-02-02 18:17:02 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-02 18:17:02 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-02 18:17:02 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-02 18:17:02 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-02 18:17:02 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-02 18:17:02 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 521 ms
+2026-02-02 18:17:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-02 18:17:02 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37314843
+2026-02-02 18:17:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-02 18:17:02 INFO  liquibase.database - Set default schema name to public
+2026-02-02 18:17:02 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 18:17:02 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 18:17:02 INFO  liquibase.util - UPDATE SUMMARY
+2026-02-02 18:17:02 INFO  liquibase.util - Run:                          0
+2026-02-02 18:17:02 INFO  liquibase.util - Previously run:              12
+2026-02-02 18:17:02 INFO  liquibase.util - Filtered out:                 0
+2026-02-02 18:17:02 INFO  liquibase.util - -------------------------------
+2026-02-02 18:17:02 INFO  liquibase.util - Total change sets:           12
+2026-02-02 18:17:02 INFO  liquibase.util - Update summary generated
+2026-02-02 18:17:02 INFO  liquibase.lockservice - Successfully released change log lock
+2026-02-02 18:17:02 INFO  liquibase.command - Command execution complete
+2026-02-02 18:17:02 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-02 18:17:02 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-02 18:17:02 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-02 18:17:02 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-02 18:17:03 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-02 18:17:03 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 18:17:03 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-02 18:17:03 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-02 18:17:03 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2026-02-02 18:17:03 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-02-02 18:17:03 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2026-02-02 18:17:03 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2026-02-02 18:17:03 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-02-02 18:17:03 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2026-02-02 18:17:03 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2026-02-02 18:17:03 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@52336a97
+2026-02-02 18:17:03 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-02 18:17:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-02-02 18:17:03 INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2026-02-02 18:17:03 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2026-02-02 18:17:03 INFO  c.h.d.DocumentApplication - Started DocumentApplication in 2.184 seconds (process running for 2.541)
+2026-02-02 18:18:33 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 18:18:33 INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2026-02-02 18:18:33 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2026-02-02 18:18:33 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 18:18:33 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2026-02-02 18:18:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 18:18:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-02 18:18:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-02 18:18:43 INFO  c.h.d.DocumentApplication - Starting DocumentApplication using Java 21.0.7 with PID 40075 (/Users/alex/Desktop/TESTZADANIE/documentApp/documentApplication/target/classes started by alex in /Users/alex/Desktop/TESTZADANIE/documentApp)
+2026-02-02 18:18:43 INFO  c.h.d.DocumentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-02 18:18:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-02 18:18:44 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2026-02-02 18:18:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-02 18:18:44 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-02 18:18:44 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-02 18:18:44 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-02 18:18:44 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-02 18:18:44 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 514 ms
+2026-02-02 18:18:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-02 18:18:44 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@782fd504
+2026-02-02 18:18:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-02 18:18:44 INFO  liquibase.database - Set default schema name to public
+2026-02-02 18:18:44 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 18:18:44 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 18:18:44 INFO  liquibase.util - UPDATE SUMMARY
+2026-02-02 18:18:44 INFO  liquibase.util - Run:                          0
+2026-02-02 18:18:44 INFO  liquibase.util - Previously run:              12
+2026-02-02 18:18:44 INFO  liquibase.util - Filtered out:                 0
+2026-02-02 18:18:44 INFO  liquibase.util - -------------------------------
+2026-02-02 18:18:44 INFO  liquibase.util - Total change sets:           12
+2026-02-02 18:18:44 INFO  liquibase.util - Update summary generated
+2026-02-02 18:18:44 INFO  liquibase.lockservice - Successfully released change log lock
+2026-02-02 18:18:44 INFO  liquibase.command - Command execution complete
+2026-02-02 18:18:44 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-02 18:18:44 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-02 18:18:44 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-02 18:18:44 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-02 18:18:45 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-02 18:18:45 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 18:18:45 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-02 18:18:45 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-02 18:18:45 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2026-02-02 18:18:45 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-02-02 18:18:45 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2026-02-02 18:18:45 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2026-02-02 18:18:45 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-02-02 18:18:45 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2026-02-02 18:18:45 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2026-02-02 18:18:45 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3f1e91bf
+2026-02-02 18:18:45 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-02 18:18:45 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-02-02 18:18:45 INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2026-02-02 18:18:45 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2026-02-02 18:18:45 INFO  c.h.d.DocumentApplication - Started DocumentApplication in 2.107 seconds (process running for 2.438)
+2026-02-02 18:18:45 INFO  c.h.d.service.WorkersService - 2026-02-02T18:18:45.831352: SUBMIT-worker отправка пачки размером 1 на утверждение
+2026-02-02 18:18:45 INFO  c.h.d.service.BatchProcessService - [APPROVE-worker] Принято к обработке утверждения 1 документов
+2026-02-02 18:18:45 WARN  c.h.d.service.DocumentService - Ошибка при записи в регистр. Текущий статус 47463ada-df8b-4a09-a533-3328beab1805. Документ SUBMITTED 
+2026-02-02 18:18:45 INFO  c.h.d.service.BatchProcessService - [APPROVE-worker] Документ 47463ada-df8b-4a09-a533-3328beab1805 успешно согласован. 1/1
+2026-02-02 18:18:45 INFO  c.h.d.service.BatchProcessService - [APPROVE-worker] Обработано успешно 1/1
+2026-02-02 18:19:17 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 18:19:17 INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2026-02-02 18:19:17 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2026-02-02 18:19:17 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 18:19:17 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2026-02-02 18:19:17 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 18:19:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-02 18:19:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-02 18:20:51 INFO  c.h.d.DocumentApplication - Starting DocumentApplication using Java 21.0.7 with PID 40135 (/Users/alex/Desktop/TESTZADANIE/documentApp/documentApplication/target/classes started by alex in /Users/alex/Desktop/TESTZADANIE/documentApp)
+2026-02-02 18:20:51 INFO  c.h.d.DocumentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-02 18:20:51 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-02 18:20:51 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 3 JPA repository interfaces.
+2026-02-02 18:20:51 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-02 18:20:51 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-02 18:20:51 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-02 18:20:51 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-02 18:20:51 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-02 18:20:51 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 495 ms
+2026-02-02 18:20:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-02 18:20:52 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@50122012
+2026-02-02 18:20:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-02 18:20:52 INFO  liquibase.database - Set default schema name to public
+2026-02-02 18:20:52 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 18:20:52 INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-02-02 18:20:52 INFO  liquibase.util - UPDATE SUMMARY
+2026-02-02 18:20:52 INFO  liquibase.util - Run:                          0
+2026-02-02 18:20:52 INFO  liquibase.util - Previously run:              12
+2026-02-02 18:20:52 INFO  liquibase.util - Filtered out:                 0
+2026-02-02 18:20:52 INFO  liquibase.util - -------------------------------
+2026-02-02 18:20:52 INFO  liquibase.util - Total change sets:           12
+2026-02-02 18:20:52 INFO  liquibase.util - Update summary generated
+2026-02-02 18:20:52 INFO  liquibase.lockservice - Successfully released change log lock
+2026-02-02 18:20:52 INFO  liquibase.command - Command execution complete
+2026-02-02 18:20:52 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-02 18:20:52 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-02 18:20:52 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-02 18:20:52 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-02 18:20:52 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-02 18:20:52 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 18:20:52 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-02 18:20:53 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-02 18:20:53 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2026-02-02 18:20:53 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-02-02 18:20:53 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2026-02-02 18:20:53 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2026-02-02 18:20:53 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-02-02 18:20:53 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2026-02-02 18:20:53 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2026-02-02 18:20:53 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@de12c13
+2026-02-02 18:20:53 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-02 18:20:53 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-02-02 18:20:53 INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2026-02-02 18:20:53 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2026-02-02 18:20:53 INFO  c.h.d.DocumentApplication - Started DocumentApplication in 2.081 seconds (process running for 2.4)
+2026-02-02 18:20:53 INFO  c.h.d.service.WorkersService - 2026-02-02T18:20:53.441560: SUBMIT-worker отправка пачки размером 1 на утверждение
+2026-02-02 18:20:53 INFO  c.h.d.service.BatchProcessService - [APPROVE-worker] Принято к обработке утверждения 1 документов
+2026-02-02 18:20:53 WARN  c.h.d.service.DocumentService - Ошибка при записи в регистр. Документ: 47463ada-df8b-4a09-a533-3328beab1805. Текущий статус: SUBMITTED 
+2026-02-02 18:20:53 ERROR c.h.d.service.BatchProcessService - [APPROVE-worker] Непредвиденная ошибка. Документ не согласован 47463ada-df8b-4a09-a533-3328beab1805, 1/1
+2026-02-02 18:20:53 INFO  c.h.d.service.BatchProcessService - [APPROVE-worker] Обработано успешно 0/1
+2026-02-02 18:20:58 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 18:20:58 INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2026-02-02 18:20:58 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2026-02-02 18:20:58 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2026-02-02 18:20:58 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2026-02-02 18:20:58 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-02 18:20:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-02 18:20:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

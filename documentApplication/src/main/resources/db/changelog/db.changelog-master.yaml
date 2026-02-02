@@ -1,0 +1,185 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1769989153887-1
+      author: alex
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_documents
+                  name: id
+                  type: BIGSERIAL
+              - column:
+                  constraints:
+                    nullable: false
+                  name: uuid
+                  type: UUID
+              - column:
+                  name: author
+                  type: VARCHAR(255)
+              - column:
+                  name: title
+                  type: VARCHAR(255)
+              - column:
+                  name: status
+                  type: VARCHAR(255)
+              - column:
+                  name: created_at
+                  type: DATETIME
+              - column:
+                  name: updated_at
+                  type: DATETIME
+            tableName: documents
+  - changeSet:
+      id: 1769989153887-2
+      author: alex
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_documents_history
+                  name: id
+                  type: BIGSERIAL
+              - column:
+                  constraints:
+                    nullable: false
+                  name: initiator
+                  type: VARCHAR(255)
+              - column:
+                  name: actioned_at
+                  type: DATETIME
+              - column:
+                  name: document_action
+                  type: VARCHAR(255)
+              - column:
+                  name: commentary
+                  type: VARCHAR(255)
+              - column:
+                  constraints:
+                    nullable: false
+                  name: document_id
+                  type: BIGINT
+            tableName: documents_history
+  - changeSet:
+      id: 1769989153887-3
+      author: alex
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_registry
+                  name: id
+                  type: BIGSERIAL
+              - column:
+                  name: approved_at
+                  type: DATETIME
+              - column:
+                  name: document_id
+                  type: BIGINT
+            tableName: registry
+  - changeSet:
+      id: 1769989153887-4
+      author: alex
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addUniqueConstraint:
+            columnNames: uuid
+            constraintName: uc_documents_uuid
+            tableName: documents
+  - changeSet:
+      id: 1769989153887-5
+      author: alex
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: document_id
+            baseTableName: documents_history
+            constraintName: FK_DOCUMENTS_HISTORY_ON_DOCUMENT
+            referencedColumnNames: id
+            referencedTableName: documents
+  - changeSet:
+      id: 1769989153887-6
+      author: alex
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: document_id
+            baseTableName: registry
+            constraintName: FK_REGISTRY_ON_DOCUMENT
+            referencedColumnNames: id
+            referencedTableName: documents
+  - changeSet:
+      id: 1769990079267-7
+      author: alex
+      changes:
+        - createIndex:
+            indexName: idx_documents_status
+            tableName: documents
+            columns:
+              - column:
+                  name: status
+  - changeSet:
+      id: 1769990123995-8
+      author: alex
+      changes:
+        - createIndex:
+            indexName: idx_documents_created_at
+            tableName: documents
+            columns:
+              - column:
+                  name: created_at
+  - changeSet:
+      id: 1769989153887-9
+      author: alex
+      changes:
+        - createIndex:
+            indexName: idx_history_document_id
+            tableName: documents_history
+            columns:
+              - column:
+                  name: document_id
+  - changeSet:
+      id: 1769989153887-10
+      author: alex
+      changes:
+        - createIndex:
+            indexName: idx_history_actioned_at
+            tableName: documents_history
+            columns:
+              - column:
+                  name: actioned_at
+  - changeSet:
+      id: 1769989153887-11
+      author: alex
+      changes:
+        - createIndex:
+            indexName: idx_registry_document_id
+            tableName: registry
+            columns:
+              - column:
+                  name: document_id
+  - changeSet:
+      id: 1769989153887-14
+      author: alex
+      changes:
+        - createIndex:
+            indexName: idx_registry_approved_at
+            tableName: registry
+            columns:
+              - column:
+                  name: approved_at
