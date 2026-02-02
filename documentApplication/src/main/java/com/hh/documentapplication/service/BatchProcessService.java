@@ -69,7 +69,7 @@ public class BatchProcessService {
             Document document = foundedDocsWithIds.get(id);
             if (document == null) {
                 map.put(id, "Не найден");
-                log.warn("[{}] Документ {} не существует. {}/{}", initiator, document.getUuid(), ++current, foundedDocsWithIds.size());
+                log.warn("[{}] Документ {} не существует. {}/{}", initiator, id, ++current, foundedDocsWithIds.size());
                 continue;
             }
             if (!DocumentStatus.SUBMITTED.equals(document.getStatus())) {

@@ -44,6 +44,7 @@ public class DocumentService {
             return save.getUuid().toString();
         }catch (Exception ex) {
             log.error("Документ {} не сохранен по причине {}", document.getTitle(), ex.getMessage() );
+            return null;
         }
     }
 
