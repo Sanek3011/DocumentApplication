@@ -23,6 +23,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:postgresql://docs-db:5432/docstool
       SPRING_DATASOURCE_USERNAME: postgres
       SPRING_DATASOURCE_PASSWORD: postgres
+      WORKER_BATCHSIZE: 50
     depends_on:
       - docs-db
 
